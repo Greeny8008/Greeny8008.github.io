@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'Nixie One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Nixie One'), local('NixieOne-Regular'), url(https://fonts.gstatic.com/s/nixieone/v8/gQ0PT3rPU_Et2ExNz-ahmpBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+  font-family: "Nixie One";
+  font-size: 18px;
+  margin: 0;
+
+}
+
+a {
+  color: #004F66;
+}
+
+nav {
+  display: flex;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.navbar-fixed-top {
+  position: absolute;
+}
+
+.navbar-nav {
+  display: flex;
+  float: right;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+
+.navbar .nav a:hover{
+  background-color: #fff;
+}
+
+
+li {
+  display: inline-flex;
+}
+
+.jumbotron {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/worktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0.25px 0.25px 0.25px #000;
+}
+
+.jumbotron .container {
+  display: inline-block;
+}
+
+.jumbotron h1 {
+  font-size: 8rem;
+}
+
+.jumbotron .fa {
+  color: white;
+  padding: 1rem;
+}
+
+.jumbotron a:hover {
+  transform: scale(1.5);
+  transition: all 200ms ease-in-out;
+}
+
+.jumbotron a{
+  text-decoration: none;
+}
+
+/*Profile Section*/
+
+.profile {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+h4 {
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #3C74A5
+}
+
+#tagline {
+  text-align: center;
+  font-size: 3rem;
+  border-bottom: 1px solid black;
+  padding-bottom: 2rem;
+  width: 100%;
+  font-family: "Nixie One";
+}
+
+h5 {
+  text-align: left;
+  font-size: 3rem;
+  margin-top: 3rem;
+  color: #3C74A5;
+  padding-left: 1rem;
+}
+
+.content-text {
+  font-size: 15px;
+  padding-left: 1rem;
+}
+
+/*Portfolio Section*/
+
+
+
+.portfolio {
+  background-color: #F0F2F4;
+  background-size: cover;
+  width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding: 7rem 7rem;
+}
+
+
+
+
+.portfolio img {
+  margin: 0 0 1rem;
+  width: 100%;
+  height: 40rem;
+  padding-top:  2rem;
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+
+  transition: transform 0.5s;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+}
+
+/* Work Experience Section */
+
+h6 {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 3.5rem;
+}
+
+#jobs p {
+  padding-left: 1rem;
+}
+
+
+/*Education Section*/
+
+.education {
+  background-color: #F0F2F4;
+  background-size: cover;
+  width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding: 7rem 4rem;
+}
+
+.education .col-sm-6 p {
+  padding-left: 1rem;
+}
+
+.fa-check-square-o {
+  margin-top: 2px;
+  padding-right: 2px;
+}
+
+.additional {
+  border-top: 1px solid black;
+  margin-top: 10rem;
+}
+
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #3C74A5;
+
+  display: inline-flex;
+}
+
+.page-bottom {
+  padding-bottom: 5rem;
+}
+
+.copyright-tag {
+  float: right;
+  margin-top: 5rem;
+}
+
+.fa {
+  padding-right: 0.5rem;
+  color: #004F66;
+}
+
+.fa-facebook {
+  padding-left: 0;
+}
+
+/*animation element sliding left*/
+
+.animation-element.slide-left{
+  opacity: 0;
+  transition: all 1.5s ease-in-out;
+  transform: translate3d(-500px, 0px, 0px);
+}
+
+.animation-element.slide-left.first{
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.second {
+  opacity: 0;
+  transition: all 1s linear 500ms;
+  transform: translate3d(-150px, 0px, 0px);
+}
+
+.animation-element.slide-left.third {
+  opacity: 0;
+  transition: all 500ms linear 1s;
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.fourth {
+  opacity: 0;
+  transition: all 1s linear 1.5s;
+  transform: translate3d(-150px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+@media only screen and (max-width: 768px) {
+
+  footer {
+    display: none;
+  }
+
+  .education {
+    margin-bottom:0;
+  }
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  .portfolio {
+    background-color: #F0F2F4;
+    background-size: cover;
+    width: 100%;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    padding: 7rem 0rem;
+  }
+
+
+}
