@@ -233,8 +233,8 @@ a {
 
 .animation-element.slide-left{
   opacity: 0;
-  transition: all 1.5s ease-in-out;
-  transform: translate3d(-500px, 0px, 0px);
+  transition: all 3s ease-in-out;
+  transform: translate3d(0px, 0px, -500px);
 }
 
 .animation-element.slide-left.first{
